@@ -8,6 +8,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+    background: #1B1918;
+    color:  #49fb35;
+    text-shadow: 1px 1px 20px #49fb35;
+    font-family: Ubuntu, Arial, sans-serif;
+}
+
+/* main container */
 .main {
     display: flex;
     height: 100vh;
@@ -24,26 +32,37 @@ html {
     margin: 0;
 }
 
+
+/* numbers display */
 .form {
     display: grid;
+    border: 1px solid #49fb35;
 }
 
 .textview {
     width: 100%;
     text-align: right;
     padding: 5px 0;
+    background: #1B1918;
+    color: #49fb35;
+    border: 3px solid #49fb35;
+    font-size: 1.25rem;
 }
 
-
+/* number buttons */
 .main-buttons {
     display: grid;
     width: 100%;
     grid-template: repeat(5, 2fr)/repeat(4, 1fr);
+    border: 1px solid #49fb35;
 }
 
 .button {
     padding: 5px;
     margin: 1px;
+    border: 1px solid #49fb35;
+    background: #1B1918;
+    color: #49fb35;
 }
 
 /* Adjust buttons on grid */
