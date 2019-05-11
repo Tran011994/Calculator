@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 30%;
+    width: 20%;
+    margin: 0;
+}
+
+.form {
+    display: grid;
+}
+
+.textview {
+    width: 100%;
+    text-align: right;
+    padding: 5px 0;
+}
+
+
+.main-buttons {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(5, 2fr)/repeat(4, 1fr);
+}
+
+.button {
+    padding: 5px;
+    margin: 1px;
+}
+
+/* Adjust buttons on grid */
+
+.CE-button {
+    grid-column: 1 / 3;
+}
+
+.zero-button {
+    grid-column: 1 / 3;
+}
+
+.equal-button {
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
