@@ -32,6 +32,9 @@ body {
     margin: 0;
 }
 
+::placeholder {
+    color: #49fb35;
+}
 
 /* numbers display */
 .form {
